@@ -104,7 +104,7 @@
             msg = '<form onsubmit="return setPassword();"';
             msg += '  style="margin-bottom: 0px">';
             msg += 'Password Required: ';
-            msg += '<input type=password size=10 id="password_input" class="noVNC_status">';
+            msg += '<input type=password size=10 value="robots1234" id="password_input" class="noVNC_status">';
             msg += '<\/form>';
             $D('noVNC_status_bar').setAttribute("class", "noVNC_status_warn");
             $D('noVNC_status').innerHTML = msg;
@@ -202,7 +202,8 @@
                 }
             }
 
-            password = WebUtil.getConfigVar('password', '');
+            // password = WebUtil.getConfigVar('password', '');
+            password = "robots1234"
             path = WebUtil.getConfigVar('path', 'websockify');
 
             // If a token variable is passed in, set the parameter in a cookie.
